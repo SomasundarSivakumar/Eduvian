@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en" class="text-[2vw] lg:text-[1vw]">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School</title>
+</head>
+
+<body class="font-sans antialiased bg-white text-black">
+  <!-- Preloader Screen -->
+  <div id="preloader"
+    class="fixed inset-0 z-[10000] flex items-center justify-center bg-white transition-opacity duration-[800ms]">
+    <div class="flex items-center gap-3">
+      <div class="w-5 h-5 rounded-full bg-[#0b3460] animate-bounce" style="animation-delay: 0ms;"></div>
+      <div class="w-5 h-5 rounded-full bg-[#30b1ac] animate-bounce" style="animation-delay: 150ms;"></div>
+      <div class="w-5 h-5 rounded-full bg-[#0ea5e9] animate-bounce" style="animation-delay: 300ms;"></div>
+      <div class="w-5 h-5 rounded-full bg-[#5f41dc] animate-bounce" style="animation-delay: 450ms;"></div>
+    </div>
+  </div>
+
+  <div id="app">
+    <header
+      class="fixed top-0 left-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-zinc-200/50 transition-all duration-300">
+      <nav class="mx-auto flex w-[90%] lg:max-w-[70%] items-center justify-between py-3">
+        <a href="#" class="flex items-center">
+          <img src="/assets/images/eduvian_logo.png" alt="Eduvian Logo" class="lg:h-16 h-36 w-auto object-contain" />
+        </a>
+        <div class="flex items-center gap-6">
+          <button type="button"
+            class="btn-primary outline-none cursor-pointer rounded lg:px-6 px-10 lg:py-3 py-5 lg:text-sm text-2xl font-medium text-white transition-colors duration-500 hover:bg-[#0b3460]">
+            Schedule a Consultation
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section Start -->
+      <section class="relative h-screen w-full">
+        <div class="absolute w-[40rem] lg:w-[69rem] right-0 top-0 z-10">
+          <img src="/assets/images/vector1.png" alt="hero-bg" class=" w-full h-full object-contain" />
+        </div>
+        <div class="absolute left-0 lg:block hidden top-1/2 z-10">
+          <img src="/assets/images/green-circle-shape.png" alt="hero-image"
+            class="anim-move1 w-full h-full object-contain" />
+        </div>
+        <div class="absolute left-10  lg:block hidden   top-[40%] z-10">
+          <img src="/assets/images/triangle-vector1.png" alt="hero-image"
+            class="w-full h-full anim-move object-contain" />
+        </div>
+        <div class="mx-auto w-[90%] lg:max-w-[70%] h-full z-20 relative">
+          <div
+            class="flex flex-col lg:flex-row justify-between gap-0  lg:gap-20 items-center h-full w-full pt-52 lg:pt-0">
+            <div
+              class="flex w-full lg:w-[calc(45%-2.5rem)] flex-col  text-center lg:text-left items-center lg:items-start">
+              <div class="w-[7.5rem] h-[7.5rem] lg:block hidden">
+                <img src="/assets/images/dots-vector.png" alt="hero-icon1" class="w-full h-full object-contain" />
+              </div>
+              <div class="text-[5rem] lg:text-[3rem] leading-25 lg:leading-14 font-semibold text-primary">
+                Beyond the Grades: Shaping Future-Ready Citizens
+              </div>
+              <p class="text-primary-light lg:text-[1rem] text-[2.3rem] lg:leading-7 leading-12 lg:mt-6 mt-10">
+                Empower your students with academic mastery and civic
+                leadership
+              </p>
+              <div class="flex items-center flex-col lg:flex-row lg:gap-4 gap-6 lg:mt-8 mt-10">
+                <div>
+                  <button type="button"
+                    class="btn-primary cursor-pointer rounded lg:px-4 px-6 py-6 lg:py-4 text-[1.8rem] lg:text-[0.7rem] font-medium text-white transition-colors duration-500 hover:bg-[#0b3460]">
+                    Schedule a Strategic Consultation
+                  </button>
+                </div>
+                <div>
+                  <button type="button"
+                    class="cursor-pointer rounded border border-transparent bg-[#0b3460] lg:px-6 px-6 lg:py-4 py-6 text-[1.8rem] lg:text-[0.7rem] font-medium text-white transition-colors duration-500 hover:border-primary hover:bg-transparent hover:text-primary">
+                    Download NEP Compliance Guide
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-[calc(55%-2.5rem)]">
+              <div class="w-full mt-20">
+                <img src="/assets/images/home-banner-img.png" alt="hero-image" class="w-full h-full object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section End  -->
+      <!-- Education Section Start -->
+      <section class="pb-10 pt-30 relative">
+        <div class="absolute lg:block hidden w-[10rem]">
+          <img src="/assets/images/vector-shape1.png" alt="education-bg" class="w-full h-full object-contain" />
+        </div>
+        <div class="absolute lg:block hidden right-0 top-1/2">
+          <img src="/assets/images/prple-circle-shape.png" alt="education-bg"
+            class="anim-move w-full h-full object-contain" />
+        </div>
+        <div class="absolute lg:block hidden right-[5%] top-[40%]">
+          <img src="/assets/images/triangle-vector2.png" alt="education-bg"
+            class="anim-move1 w-full h-full object-contain" />
+        </div>
+        <div class="mx-auto w-[90%] lg:max-w-[70%] h-full z-20">
+          <div class="js-education-intro flex flex-col gap-2">
+            <div class="lg:text-[3rem] text-[4rem] text-center lg:leading-16 leading-20 font-semibold text-primary">
+              The Education Gap We Solve
+            </div>
+            <p
+              class="text-primary-light lg:text-[1rem] text-[2rem] lg:leading-7 leading-12 w-full lg:w-[60%] mx-auto text-center">
+              While standard curricula focus on rote memorization, today's
+              students need more to thrive in a globalized world. We bridge
+              the critical gap between academic achievement and real-world
+              civic preparedness.
+            </p>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row justify-between items-stretch gap-10 relative h-full pt-10 lg:pt-20 w-full">
+            <div
+              class="pointer-events-none lg:block hidden animate-spin duration-700 absolute top-25 left-[-2.5rem] h-25 w-25 z-[-1] -translate-y-1/2 rounded-full bg-gradient-to-br from-btn-primary via-[#248f8b] to-primary"
+              aria-hidden="true"></div>
+            <div
+              class="pointer-events-none lg:block hidden animate-spin duration-700 absolute bottom-[-5.9375rem] right-[-2.5rem] h-25 w-25 z-[-1] -translate-y-1/2 rounded-full bg-gradient-to-br from-btn-primary via-[#248f8b] to-primary"
+              aria-hidden="true"></div>
+            <div
+              class="w-full lg:w-[calc(33.33%-1.666875rem)] hover:border-[#30b1ac] hover:bg-transparent hover:text-btn-primary transition-colors duration-700 border border-transparent flex flex-col service-box lg:px-6 px-10 py-10 lg:py-8 rounded-[0.3125rem]">
+              <div
+                class="lg:w-[3.75rem] w-30 h-30 lg:h-[3.75rem] btn-primary text-white rounded-full flex items-center justify-center">
+                <div class="lg:w-10 lg:h-10 w-20 h-20">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                    <path fill="currentColor"
+                      d="M28.875 4a6.123 6.123 0 0 1 6.122 6.018A7.5 7.5 0 0 1 42 17.5a7.48 7.48 0 0 1-2.597 5.67a7.75 7.75 0 0 1-2.234 14.773l-.375 1.13A7.207 7.207 0 0 1 24 40.85a7.207 7.207 0 0 1-12.794-1.777l-.375-1.13a7.749 7.749 0 0 1-2.234-14.772A7.48 7.48 0 0 1 6 17.5a7.5 7.5 0 0 1 7.003-7.482A6.123 6.123 0 0 1 24 6.417A6.12 6.12 0 0 1 28.875 4m-9.75 2.5a3.625 3.625 0 0 0-3.625 3.625v1.125c0 .69-.56 1.25-1.25 1.25h-.75a5 5 0 0 0 0 10h.25a1.25 1.25 0 1 1 0 2.5h-2a5.25 5.25 0 1 0 0 10.5c.504 0 .956.303 1.15.76l.035.095l.643 1.926a4.707 4.707 0 0 0 9.172-1.488V10.125A3.625 3.625 0 0 0 19.125 6.5m9.75 0a3.625 3.625 0 0 0-3.625 3.625v26.668a4.707 4.707 0 0 0 9.172 1.488l.643-1.926l.035-.094a1.25 1.25 0 0 1 1.15-.761a5.25 5.25 0 1 0 0-10.5h-2a1.25 1.25 0 1 1 0-2.5h.25a5 5 0 0 0 0-10h-.75c-.69 0-1.25-.56-1.25-1.25v-1.125A3.625 3.625 0 0 0 28.875 6.5" />
+                  </svg>
+                </div>
+              </div>
+              <div class="lg:text-[1.3rem] text-[2.3rem] mt-8 lg:mt-5 text-primary font-semibold">
+                Move Beyond Rote Learning
+              </div>
+              <p class="text-primary-light text-[1.8rem] lg:text-[1rem] lg:leading-7 leading-12 mt-3">
+                Replace surface-level memorization with deep conceptual
+                clarity in core subjects.
+              </p>
+            </div>
+            <div
+              class="w-full lg:w-[calc(33.33%-1.666875rem)] hover:border-[#30b1ac] relative hover:bg-transparent hover:text-btn-primary transition-colors duration-700 border border-transparent flex flex-col service-box px-6 py-8 rounded-[0.3125rem]">
+              <div
+                class="lg:w-[3.75rem] w-30 h-30 lg:h-[3.75rem] btn-primary text-white rounded-full flex items-center justify-center">
+                <div class="lg:w-10 lg:h-10 w-20 h-20">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M8.923 5.33a3.5 3.5 0 0 1 6.154 0a2.643 2.643 0 1 1-.1 3.512A3.5 3.5 0 0 1 12 10.5a3.5 3.5 0 0 1-2.976-1.657a2.643 2.643 0 1 1-.1-3.513m.633 1.14a2.65 2.65 0 0 1 .035 1.199a2.501 2.501 0 0 0 4.819 0a2.66 2.66 0 0 1 .034-1.2a2.501 2.501 0 0 0-4.888 0m-1.026.072a1.643 1.643 0 1 0 .031 1.114a3.5 3.5 0 0 1-.031-1.114m6.909 1.113a1.644 1.644 0 1 0 .031-1.113a3.5 3.5 0 0 1-.031 1.113M4.951 10.297c.347-.092.675.022.901.186c.09.065.214.145.365.218a.5.5 0 0 1-.435.9a3.4 3.4 0 0 1-.517-.308a.2.2 0 0 0-.053-.027l-.007-.001a7 7 0 0 0-.401.12l-.686.224a1.63 1.63 0 0 0-1.066 1.114l-.283 2.049c-.056.403.157.705.46.777q.335.082.813.16a.5.5 0 1 1-.16.988a12 12 0 0 1-.884-.175c-.895-.213-1.333-1.07-1.22-1.887l.292-2.106l.006-.027a2.62 2.62 0 0 1 1.73-1.843l.685-.225q.23-.075.46-.137m14.229 0a1.07 1.07 0 0 0-.9.186c-.09.065-.214.145-.365.218a.5.5 0 0 0 .435.9a3.4 3.4 0 0 0 .517-.308a.2.2 0 0 1 .053-.027l.005-.001h.002q.203.053.401.12l.686.224c.526.173.925.594 1.066 1.114l.283 2.049c.056.403-.156.705-.46.777a11 11 0 0 1-.813.16a.5.5 0 1 0 .16.988q.512-.085.884-.175c.895-.213 1.333-1.07 1.22-1.887l-.292-2.106l-.006-.027a2.62 2.62 0 0 0-1.73-1.843l-.685-.225a9 9 0 0 0-.46-.137" />
+                    <path fill="currentColor"
+                      d="M13.791 11.92c.359-.238.86-.41 1.377-.265q.234.066.467.143l.959.315a3.47 3.47 0 0 1 2.29 2.44l.007.027l.406 2.936c.147 1.06-.42 2.15-1.554 2.42c-1.15.274-3.012.564-5.743.564c-2.73 0-4.593-.29-5.743-.564c-1.134-.27-1.701-1.36-1.554-2.42l.406-2.936l.007-.027a3.47 3.47 0 0 1 2.29-2.44l.96-.315q.232-.077.466-.143c.517-.146 1.018.027 1.377.265c.383.254 1.013.566 1.791.566s1.409-.312 1.791-.566m1.105.697c-.142-.04-.34-.004-.552.136c-.477.317-1.3.733-2.344.733s-1.867-.416-2.344-.733c-.211-.14-.41-.176-.552-.136q-.215.06-.426.13l-.96.316a2.48 2.48 0 0 0-1.626 1.71l-.399 2.88c-.09.647.253 1.18.796 1.31c1.067.255 2.852.537 5.511.537s4.444-.282 5.511-.537c.543-.13.885-.663.796-1.31l-.399-2.88a2.48 2.48 0 0 0-1.626-1.71l-.96-.315q-.211-.07-.426-.13" />
+                  </svg>
+                </div>
+              </div>
+              <div class="lg:text-[1.3rem] text-[2.3rem] mt-8 lg:mt-5 text-primary font-semibold">
+                Active Citizenship
+              </div>
+              <p class="text-primary-light text-[1.8rem] lg:text-[1rem] leading-12 lg:leading-7 mt-3">
+                Transition from passive learning to hands-on civic engagement
+                and community responsibility.
+              </p>
+            </div>
+            <div
+              class="w-full lg:w-[calc(33.33%-1.666875rem)] hover:border-[#30b1ac] hover:bg-transparent hover:text-btn-primary transition-colors duration-700 border border-transparent flex flex-col service-box px-6 py-8 rounded-[0.3125rem]">
+              <div
+                class="lg:w-[3.75rem] w-30 h-30 lg:h-[3.75rem] btn-primary text-white rounded-full flex items-center justify-center">
+                <div class="lg:w-10 lg:h-10 w-20 h-20">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                      d="m212.24 67.76l-40-40A6 6 0 0 0 168 26H88a14 14 0 0 0-14 14v18H56a14 14 0 0 0-14 14v144a14 14 0 0 0 14 14h112a14 14 0 0 0 14-14v-18h18a14 14 0 0 0 14-14V72a6 6 0 0 0-1.76-4.24M170 216a2 2 0 0 1-2 2H56a2 2 0 0 1-2-2V72a2 2 0 0 1 2-2h77.51L170 106.49Zm32-32a2 2 0 0 1-2 2h-18v-82a6 6 0 0 0-1.76-4.24l-40-40A6 6 0 0 0 136 58H86V40a2 2 0 0 1 2-2h77.51L202 74.49Zm-60-32a6 6 0 0 1-6 6H88a6 6 0 0 1 0-12h48a6 6 0 0 1 6 6m0 32a6 6 0 0 1-6 6H88a6 6 0 0 1 0-12h48a6 6 0 0 1 6 6" />
+                  </svg>
+                </div>
+              </div>
+              <div class="lg:text-[1.3rem] text-[2.3rem] mt-8 lg:mt-5 text-primary font-semibold">
+                NEP 2020 Aligned
+              </div>
+              <p class="text-primary-light text-[1.8rem] lg:text-[1rem] leading-12 lg:leading-7 mt-3">
+                Effortlessly meet the National Education Policy mandates for
+                holistic and value-based education.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Education Section End -->
+      <section class="relative pt-10 pb-30">
+        <div class="absolute lg:block hidden right-0 w-[10rem] bottom-[-18.75rem] z-10 rotate-180">
+          <img src="/assets/images/vector-shape1.png" alt="education-bg"
+            class="w-full anim-move h-full object-contain" />
+        </div>
+        <div class="absolute lg:block hidden left-0 top-1/2 z-10">
+          <img src="/assets/images/green-circle-shape.png" alt="hero-image"
+            class="anim-move w-full h-full object-contain" />
+        </div>
+        <div class="absolute lg:block hidden left-10 top-[40%] z-10">
+          <img src="/assets/images/triangle-vector1.png" alt="hero-image"
+            class="w-full h-full anim-move1 object-contain" />
+        </div>
+        <div class="mx-auto w-[90%] lg:max-w-[70%] h-full z-20">
+          <div class="flex flex-col lg:gap-2 gap-10">
+            <div class="lg:text-[3rem] text-[4rem] leading-18 text-center  font-semibold text-primary">
+              Our Flagship Programs
+            </div>
+            <p
+              class="text-primary-light text-[1.8rem] lg:text-[1rem] leading-12 lg:leading-7 w-full lg:w-[60%] mx-auto text-center">
+              Two powerful, complementary programs — each designed to
+              transform a different dimension of your students' growth.
+            </p>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20 relative h-full pt-20 lg:pt-40 w-full">
+            <div class="w-full lg:w-[calc(55%-2.5rem)]">
+              <div>
+                <img src="/assets/images/program-youth-civic.png"
+                  alt="Illustration of diverse people around a globe with civic engagement, city skyline, and civic buildings"
+                  class="h-full w-full object-contain" />
+              </div>
+            </div>
+            <div class="w-full lg:w-[calc(45%-2.5rem)] gap-5 flex flex-col">
+              <div class="lg:text-[2.4rem] text-[3rem] lg:leading-12 leading-18 font-semibold text-primary">
+                Youth Civic Empowerment Program
+              </div>
+              <p class="text-primary-light font-light text-[2rem] lg:text-[1rem] lg:leading-7 leading-14 mx-auto">
+                A structured pathway designed to build leadership, empathy,
+                and a strong sense of community belonging.
+              </p>
+              <ul
+                class="ml-5 list-disc pl-1 text-[1.8rem] lg:text-[1rem] flex flex-col gap-5 font-light lg:leading-7 leading-14 text-primary-light marker:text-btn-primary">
+                <li>
+                  <span class="text-primary font-medium">
+                    Hands-on Impact:</span>
+                  Students organize local community action projects.
+                </li>
+                <li>
+                  <span class="text-primary font-medium">
+                    Leadership Development:</span>
+                  Focused mentorship and public speaking modules.
+                </li>
+                <li>
+                  <span class="text-primary font-medium">
+                    Experience-Driven:</span>
+                  Learning through role-play, simulations, and real-world
+                  societal engagement.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- next one  -->
+          <div
+            class="flex flex-col-reverse lg:flex-row justify-between items-center gap-10 lg:gap-20 relative h-full pt-20 lg:pt-30 w-full">
+            <div class="w-full lg:w-[calc(45%-2.5rem)] gap-5 flex flex-col">
+              <div class="lg:text-[2.4rem] text-[3rem] lg:leading-12 leading-18 font-semibold text-primary">
+                Edvian Edge Program
+              </div>
+              <p class="text-primary-light font-light text-[2rem] lg:text-[1rem] lg:leading-7 leading-14 mx-auto">
+                A rigorous academic enhancer for Classes 3–10 that prioritizes
+                understanding over grades.
+              </p>
+              <ul
+                class="ml-5 list-disc pl-1 text-[1.8rem] lg:text-[1rem] flex flex-col gap-5 font-light lg:leading-7 leading-14 text-primary-light marker:text-btn-primary">
+                <li>
+                  <span class="text-primary font-medium">
+                    Subject Mastery:</span>
+                  Strengthen fundamentals in Math, Science, and Language.
+                </li>
+                <li>
+                  <span class="text-primary font-medium">
+                    Logical Reasoning:</span>
+                  Build students' ability to analyze complex problems
+                  independently.
+                </li>
+                <li>
+                  <span class="text-primary font-medium">
+                    Personalized Pace:</span>
+                  Inquiry-based learning tailored to each student’s unique
+                  growth journey.
+                </li>
+              </ul>
+            </div>
+            <div class="w-full lg:w-[calc(55%-2.5rem)]">
+              <div>
+                <img src="/assets/images/program_2.png"
+                  alt="Illustration of diverse people around a globe with civic engagement, city skyline, and civic buildings"
+                  class="h-full w-full object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Education end   -->
+      <!-- Statagies Section Start  -->
+      <section style="
+            background-image: url(&quot;/assets/images/curve-bg-img.png&quot;);
+            background-size: cover;
+            background-position: center;
+          " class="relative">
+        <div class="absolute left-1 w-[10rem] bottom-0">
+          <img src="/assets/images/vector-shape1.png" alt="education-bg" class="w-full h-full object-contain" />
+        </div>
+        <div class="mx-auto w-[90%] lg:max-w-[70%] h-full z-20 py-20">
+          <div class="flex flex-col lg:gap-2 gap-5">
+            <div class="lg:text-[3rem] text-[4rem] text-center leading-18 font-semibold text-primary">
+              Strategic Advantages for Your Institution
+            </div>
+            <p
+              class="text-primary-light font-light text-[2rem] lg:text-[1rem] lg:leading-7 leading-14 w-full lg:w-[60%] mx-auto text-center">
+              Partnering with Eduvian isn't just an educational upgrade — it's
+              a strategic decision that protects and elevates your
+              institution.
+            </p>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row justify-between items-stretch gap-10 relative h-full pt-20 pb-20 lg:pb-120 w-full">
+            <div
+              class="w-full lg:w-[calc(33.33%-1.666875rem)] flex flex-col  rounded-lg service-box overflow-hidden bg-white p-8">
+              <div class="overflow-hidden w-full">
+                <img src="/assets/images/strategic-edtech-illustration.png"
+                  alt="EdTech illustration with digital learning, classroom, and collaboration"
+                  class="h-auto w-full object-contain" />
+              </div>
+              <div class="flex flex-col mt-8">
+                <div class="lg:text-2xl text-[3rem] font-medium text-primary">
+                  Zero Teacher Burden
+                </div>
+                <p class="text-primary-light font-light text-[2rem] lg:text-[1rem] lg:leading-7 leading-14 mt-5">
+                  Our expert facilitators deliver the entire program on-site.
+                  Your staff remains focused on core board exam preparation
+                  while we handle the holistic development.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-[calc(33.33%-1.666875rem)] flex flex-col rounded-lg service-box overflow-hidden bg-white p-8">
+              <div class="overflow-hidden w-full">
+                <img src="/assets/images/strategic-data-impact-infographic.png"
+                  alt="EdTech illustration with digital learning, classroom, and collaboration"
+                  class="h-auto w-full object-contain" />
+              </div>
+              <div class="flex flex-col mt-8">
+                <div class="lg:text-2xl text-[3rem] font-medium text-primary">
+                  Measurable ROI
+                </div>
+                <p class="text-primary-light font-light text-[2rem] lg:text-[1rem] lg:leading-7 leading-14 mt-5">
+                  We don't just teach; we track. Gain actionable data on
+                  behavioral improvements and civic engagement to showcase to
+                  parents and accreditation bodies like NABET or the British
+                  Council.
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-[calc(33.33%-1.666875rem)] flex flex-col rounded-lg service-box overflow-hidden bg-white p-8">
+              <div class="overflow-hidden w-full">
+                <img src="/assets/images/strategic-value-differentiation-infographic.png"
+                  alt="Infographic comparing crowded market competitors with distinct offering, pillars, and differentiation impact"
+                  class="h-auto w-full object-contain" />
+              </div>
+              <div class="flex flex-col mt-8">
+                <div class=" lg:text-2xl text-[3rem] font-medium text-primary">
+                  Market Differentiation
+                </div>
+                <p class="text-primary-light font-light text-[2rem] lg:text-[1rem] lg:leading-7 leading-14 mt-5">
+                  Stand out in a crowded market. Positioning your school as a
+                  leader in character development enhances institutional
+                  reputation and builds deep parental trust.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Statagies Section End -->
+      <!-- Results Section Start -->
+      <section class="relative">
+        <div class="absolute lg:block hidden right-0 top-1/2">
+          <img src="/assets/images/prple-circle-shape.png" alt="education-bg"
+            class="anim-move w-full h-full object-contain" />
+        </div>
+        <div class="absolute lg:block hidden right-[5%] top-[40%]">
+          <img src="/assets/images/triangle-vector2.png" alt="education-bg"
+            class="anim-move1 w-full h-full object-contain" />
+        </div>
+        <div class="absolute lg:block hidden left-0 top-1/2">
+          <img src="/assets/images/green-circle-shape.png" alt="education-bg"
+            class="anim-move w-full h-full object-contain" />
+        </div>
+        <div class="absolute lg:block hidden  left-[5%] top-[40%]">
+          <img src="/assets/images/triangle-vector1.png" alt="education-bg"
+            class="w-full anim-move1 h-full object-contain" />
+        </div>
+        <div class="mx-auto w-[90%] lg:max-w-[70%] h-full z-20 pb-20 lg:-mt-50">
+          <div class="flex flex-col lg:gap-2 gap-5">
+            <div class="lg:text-[3rem] text-[4rem] text-center leading-18 font-semibold text-primary">
+              Results That Matter
+            </div>
+            <p
+              class="text-primary-light font-light text-[2rem] lg:text-[1rem] lg:leading-7 leading-14 w-full lg:w-[60%] mx-auto text-center">
+              Eduvian partner schools report meaningful, measurable gains
+              across every indicator that matters to institutional health and
+              reputation.
+            </p>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center lg:gap-10 gap-30 pt-20 lg:pt-30 relative h-full w-full">
+            <div class="w-full lg:w-[calc(60%-0.625rem)] grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-col gap-10">
+              <div class="flex flex-col gap-3 justify-center items-center">
+                <div class="lg:text-[3.4rem] text-[4rem] leading-12 font-semibold text-btn-primary js-counter">
+                  94%
+                </div>
+                <div class="lg:text-[1.3rem] text-[2rem] font-medium text-primary">
+                  Parent Satisfaction
+                </div>
+                <div class="text-primary-light font-light lg:text-sm text-[1.5rem]">
+                  Reported satisfaction with program outcomes
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-3 justify-center items-center">
+                <div class="lg:text-[3.4rem] text-[4rem] leading-12 font-semibold text-btn-primary js-counter">
+                  ↑32%
+                </div>
+                <div class="lg:text-[1.3rem] text-[2rem] font-medium text-primary">
+                  Student Retention
+                </div>
+                <div class="text-primary-light font-light lg:text-sm text-[1.5rem]">
+                  Increase in alumni involvement and advocacy
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 justify-center items-center">
+                <div class="lg:text-[3.4rem] text-[4rem] leading-12 font-semibold text-btn-primary js-counter">
+                  3x
+                </div>
+                <div class="lg:text-[1.3rem] text-[2rem] font-medium text-primary">
+                  Alumni Engagement
+                </div>
+                <div class="text-primary-light font-light lg:text-sm text-[1.5rem]">
+                  Increase in alumni involvement and advocacy
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 justify-center items-center">
+                <div class="lg:text-[3.4rem] text-[4rem] leading-12 font-semibold text-btn-primary js-counter">
+                  100%
+                </div>
+                <div class="lg:text-[1.3rem] text-[2rem] font-medium text-primary">
+                  College-Ready Portfolios
+                </div>
+                <div class="text-primary-light font-light lg:text-sm text-[1.5rem]">
+                  Students graduate with documented leadership records
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-[calc(40%-0.625rem)]">
+              <div>
+                <img src="/assets/images/advance-career-img.png"
+                  alt="Parent satisfaction graph with percentage increase over time" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Results Section End -->
+
+      <!-- Ready transform start  -->
+      <section class="relative">
+        <div class="absolute lg:block hidden w-[10rem] left-1 bottom-0">
+          <img src="/assets/images/vector-shape1.png" alt="education-bg" class="w-full h-full object-contain" />
+        </div>
+        <div class="absolute lg:block hidden w-[10rem] right-0 rotate-180  top-0">
+          <img src="/assets/images/vector-shape1.png" alt="education-bg" class="w-full h-full object-contain" />
+        </div>
+        <div class="mx-auto w-[90%] lg:max-w-[70%] py-20 h-full z-20">
+          <div
+            class="flex flex-col-reverse lg:flex-row justify-between items-center gap-10 lg:gap-20 relative h-full w-full">
+            <div class="w-full lg:w-[calc(40%-1.25rem)]">
+              <div class="relative z-10!">
+                <img src="/assets/images/ready-transform-partnership.png"
+                  alt="Illustration of two professionals shaking hands, partnership and agreement"
+                  class="h-auto w-full object-contain" />
+              </div>
+            </div>
+            <div
+              class="w-full lg:w-[calc(60%-1.25rem)] flex flex-col gap-2 text-center lg:text-left items-center lg:items-start">
+              <div class="lg:text-[2.4rem] text-[3rem] lg:leading-12 leading-18 font-semibold text-primary">
+                Ready to Transform Your School's Impact?
+              </div>
+              <p class="text-primary-light font-light text-[2rem] lg:text-[1rem] lg:leading-7 leading-14 mt-5">
+                Let’s build the next generation of responsible, future-ready leaders together
+              </p>
+              <div class="flex items-center lg:flex-row flex-col lg:gap-5 gap-10 mt-8">
+                <div>
+                  <button type="button"
+                    class="btn-primary cursor-pointer rounded lg:px-6 px-8 lg:py-4 py-8 lg:text-sm text-2xl font-medium text-white transition-colors duration-500 hover:bg-[#0b3460]">
+                    Schedule a Strategic Consultation
+                  </button>
+                </div>
+                <div>
+                  <button type="button"
+                    class="cursor-pointer rounded border border-transparent bg-[#0b3460] lg:px-6 px-8 lg:py-4 py-8 lg:text-sm text-2xl font-medium text-white transition-colors duration-500 hover:border-primary hover:bg-transparent hover:text-primary">
+                    Download NEP Compliance Guide
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Ready transform end  -->
+      <!-- FAQ Section Start  -->
+      <section>
+        <div class="mx-auto w-[90%] lg:max-w-[70%] lg:pt-20 lg:pb-40 pt-10 pb-20 h-full z-20">
+          <div class="flex flex-col lg:gap-2 gap-10">
+            <div class="text-center lg:text-[3rem] text-[4rem] font-semibold leading-18 text-primary">
+              Frequently Asked Questions
+            </div>
+            <p
+              class="mx-auto w-full lg:w-[85%] max-w-4xl text-center lg:text-[1rem] text-[2rem] font-light  lg:leading-7 leading-14 text-primary-light">
+              We understand that school leaders need clarity before committing. Here are the concerns we hear most often
+              — answered honestly.
+            </p>
+          </div>
+          <div class="mx-auto pt-20 w-full lg:max-w-[80%] space-y-4">
+            <div class="js-faq-card cursor-pointer! overflow-hidden rounded-lg border border-zinc-200 bg-white">
+              <button type="button"
+                class="js-faq-accordion-trigger cursor-pointer! flex w-full items-center gap-5 px-6 py-5 text-left transition-colors hover:bg-zinc-50 focus-visible:outline focus-visible:outline-[0.125rem] focus-visible:outline-offset-[0.125rem] focus-visible:outline-btn-primary"
+                aria-expanded="false">
+                <span
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-btn-primary/15 text-base font-bold text-btn-primary">1</span>
+                <span class="flex-1 lg:text-xl text-[2rem] font-semibold text-primary ">How does this fit our
+                  schedule?</span>
+                <span class="faq-chevron shrink-0 text-btn-primary" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="transition-transform duration-300 ease-out">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-accordion__panel">
+                <div class="faq-accordion__panel-inner">
+                  <p
+                    class="px-6 pb-6 lg:pl-[4.75rem]  pt-3 lg:text-[1rem] text-[2rem] font-light lg:leading-7 leading-14 text-primary-light ">
+                    Our modules are flexible, fitting into a standard "Zero Period," Saturday club format, or as a
+                    modular integrated unit.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="js-faq-card cursor-pointer overflow-hidden rounded-lg border border-zinc-200 bg-white">
+              <button type="button"
+                class="js-faq-accordion-trigger cursor-pointer! flex w-full items-center gap-5 px-6 py-5 text-left transition-colors hover:bg-zinc-50 focus-visible:outline focus-visible:outline-[0.125rem] focus-visible:outline-offset-[0.125rem] focus-visible:outline-btn-primary"
+                aria-expanded="false">
+                <span
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-btn-primary/15 text-base font-bold text-btn-primary">2</span>
+                <span class="flex-1  lg:text-xl text-[2rem] font-semibold text-primary ">Is it too much pressure for
+                  higher
+                  grades?</span>
+                <span class="faq-chevron shrink-0 text-btn-primary" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="transition-transform duration-300 ease-out">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-accordion__panel">
+                <div class="faq-accordion__panel-inner">
+                  <p
+                    class="px-6 pb-6 lg:pl-[4.75rem]  pt-3 lg:text-[1rem] text-[2rem] font-light lg:leading-7 leading-14 text-primary-light ">
+                    For Classes 10–12, we offer a "light-touch" version focused exclusively on leadership and
+                    college-ready portfolio building.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="js-faq-card cursor-pointer overflow-hidden rounded-lg border border-zinc-200 bg-white">
+              <button type="button"
+                class="js-faq-accordion-trigger flex cursor-pointer! w-full items-center gap-5 px-6 py-5 text-left transition-colors hover:bg-zinc-50 focus-visible:outline focus-visible:outline-[0.125rem] focus-visible:outline-offset-[0.125rem] focus-visible:outline-btn-primary"
+                aria-expanded="false">
+                <span
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-btn-primary/15 text-base font-bold text-btn-primary">3</span>
+                <span class="flex-1 lg:text-xl text-[2rem] font-semibold text-primary ">What about the local
+                  context?</span>
+                <span class="faq-chevron shrink-0 text-btn-primary" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="transition-transform duration-300 ease-out">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </button>
+              <div class="faq-accordion__panel">
+                <div class="faq-accordion__panel-inner">
+                  <p
+                    class="px-6 pb-6 lg:pl-[4.75rem]  pt-3 lg:text-[1rem] text-[2rem] font-light lg:leading-7 leading-14 text-primary-light ">
+                    Our facilitators are bilingual and adapt concepts to regional civic issues to ensure true concept
+                    mastery.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Section End  -->
+      <!-- footer start  -->
+      <footer class="bg-gradient-to-r from-[#5f41dc] to-[#25a0ff] text-white pt-20 pb-5">
+        <div class="mx-auto w-[90%] lg:max-w-[70%]">
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-20 lg:gap-8 pb-10 border-b border-white/20">
+            <div class="flex flex-col gap-5">
+              <div class="flex items-center gap-3">
+                <img src="/assets/images/eduvian_logo.png" class="lg:h-16 h-36 w-auto" alt="Eduvian Logo" />
+              </div>
+              <p class="text-white/80 lg:text-sm text-3xl leading-6 font-semibold">
+                Connect With Eduvian Solutions
+              </p>
+              <p class="text-white/80 lg:text-sm text-2xl lg:leading-6 leading-10">
+                Empowering your students with academic mastery and civic leadership — a partnership built for schools
+                that dare to lead.
+              </p>
+            </div>
+            <div class="flex flex-col gap-5">
+              <h3 class="lg:text-xl text-3xl font-semibold">Quick Links</h3>
+              <ul class="flex flex-col gap-3 text-white/80 lg:text-sm text-2xl lg:leading-6 leading-10">
+                <li><a href="#" class="hover:text-white transition-colors">• Our Programs</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">• NEP 2020 Compliance</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">• Case Studies & Impact Reports</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">• Schedule a Consultation</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">• Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-5">
+              <h3 class="lg:text-xl text-3xl font-semibold">Accreditations & Alignments</h3>
+              <p class="text-white/80 lg:text-sm text-2xl lg:leading-6 leading-10">
+                Eduvian programs are recognized and aligned with:
+              </p>
+              <div class="flex flex-wrap lg:gap-2 gap-5 lg:text-xs text-2xl">
+                <span class="border border-white/40 px-2 py-1 rounded">NABET RECOGNIZED</span>
+                <span class="border border-white/40 px-2 py-1 rounded">BRITISH COUNCIL ALIGNED</span>
+                <span class="border border-white/40 px-2 py-1 rounded">CBSE COMPATIBLE</span>
+                <span class="border border-white/40 px-2 py-1 rounded">ICSE COMPATIBLE</span>
+                <span class="border border-white/40 px-2 py-1 rounded">NEP 2020 COMPLIANT</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-5">
+              <h3 class="lg:text-xl text-3xl font-semibold">Book a Consultation</h3>
+              <p class="text-white/80 lg:text-sm text-2xl lg:leading-6 leading-10">
+                Reach out to our partnership team to explore how Eduvian can work for your school.
+              </p>
+              <div>
+                <button
+                  class="bg-[#24516a] text-white lg:px-6 px-10 py-3 lg:py-3 py-5 rounded lg:text-sm text-2xl font-semibold hover:bg-[#0b3460] transition-colors border-none cursor-pointer">
+                  Schedule Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pt-5 text-center text-white/60 lg:text-sm text-2xl">
+            © 2026 Eduvian Solutions. All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script type="module" src="/src/script.js"></script>
+</body>
+
+</html>
