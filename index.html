@@ -86,7 +86,7 @@
 
     <!-- Mobile Drawer -->
     <div id="mobile-drawer"
-      class="fixed top-0 right-0 z-[70] h-full w-[80%] max-w-[400px] bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-400 ease-in-out">
+      class="fixed top-0 right-0 z-[70] h-full w-full bg-white shadow-2xl flex flex-col translate-x-full transition-transform duration-400 ease-in-out">
       <!-- Drawer Header -->
       <div class="flex items-center justify-between px-10 py-6 border-b border-zinc-100">
         <img src="/assets/images/eduvian_logo.png" alt="Eduvian Logo" class="h-24 w-auto object-contain" />
@@ -99,7 +99,7 @@
         </button>
       </div>
       <!-- Drawer Nav Links -->
-      <nav class="flex flex-col gap-2 px-10 py-8 flex-1">
+      <nav class="flex flex-col gap-8 px-10 py-16 flex-1 items-center justify-center">
         <a id="mobile-nav-home" href="/"
           class="flex items-center gap-4 px-6 py-5 rounded-xl text-[2.2rem] font-semibold text-primary hover:bg-btn-primary/10 hover:text-btn-primary transition-all duration-200">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 shrink-0" fill="none" viewBox="0 0 24 24"
@@ -555,7 +555,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-full lg:w-[calc(40%-0.625rem)]">
+            <div class="mx-auto w-full lg:w-[calc(40%-0.625rem)]">
               <div>
                 <img src="/assets/images/advance-career-img.png"
                   alt="Parent satisfaction graph with percentage increase over time" />
@@ -938,6 +938,12 @@
       btn.addEventListener('click', openMenu);
       closeBtn.addEventListener('click', closeMenu);
       overlay.addEventListener('click', closeMenu);
+
+      // Close menu when clicking any nav link
+      const navLinks = drawer.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
     })();
   </script>
 </body>
