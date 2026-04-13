@@ -55,7 +55,11 @@
         </a>
         <div class="flex items-center gap-6">
           <!-- Desktop Links -->
-          <a href="/contact.html"
+          <a id="nav-home" href="/"
+            class="hidden lg:block text-primary font-medium hover:text-btn-primary transition-colors">Home</a>
+          <a id="nav-programs" href="/#programs"
+            class="hidden lg:block text-primary font-medium hover:text-btn-primary transition-colors">Programs</a>
+          <a id="nav-contact" href="/#contact"
             class="hidden lg:block text-primary font-medium hover:text-btn-primary transition-colors">Contact Us</a>
           <button type="button"
             class="btn-primary outline-none cursor-pointer rounded lg:px-6 px-8 lg:py-3 py-4 lg:text-sm text-xl font-medium text-white transition-colors duration-500 hover:bg-[#0b3460]">
@@ -64,9 +68,12 @@
           <!-- Hamburger Button (Mobile only) -->
           <button id="mobile-menu-btn" type="button" aria-label="Open menu"
             class="lg:hidden flex flex-col justify-center items-center gap-[6px] w-16 h-16 rounded-lg focus:outline-none">
-            <span class="hamburger-line block w-10 h-[3px] bg-primary rounded-full transition-all duration-300 ease-in-out"></span>
-            <span class="hamburger-line block w-10 h-[3px] bg-primary rounded-full transition-all duration-300 ease-in-out"></span>
-            <span class="hamburger-line block w-10 h-[3px] bg-primary rounded-full transition-all duration-300 ease-in-out"></span>
+            <span
+              class="hamburger-line block w-10 h-[3px] bg-primary rounded-full transition-all duration-300 ease-in-out"></span>
+            <span
+              class="hamburger-line block w-10 h-[3px] bg-primary rounded-full transition-all duration-300 ease-in-out"></span>
+            <span
+              class="hamburger-line block w-10 h-[3px] bg-primary rounded-full transition-all duration-300 ease-in-out"></span>
           </button>
         </div>
       </nav>
@@ -74,7 +81,8 @@
 
     <!-- Mobile Drawer Overlay -->
     <div id="mobile-overlay"
-      class="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
+      class="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+    </div>
 
     <!-- Mobile Drawer -->
     <div id="mobile-drawer"
@@ -84,21 +92,39 @@
         <img src="/assets/images/eduvian_logo.png" alt="Eduvian Logo" class="h-24 w-auto object-contain" />
         <button id="mobile-menu-close" aria-label="Close menu"
           class="flex items-center justify-center w-14 h-14 rounded-full bg-zinc-100 hover:bg-btn-primary hover:text-white transition-all duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+            stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
       <!-- Drawer Nav Links -->
       <nav class="flex flex-col gap-2 px-10 py-8 flex-1">
-        <a href="/"
+        <a id="mobile-nav-home" href="/"
           class="flex items-center gap-4 px-6 py-5 rounded-xl text-[2.2rem] font-semibold text-primary hover:bg-btn-primary/10 hover:text-btn-primary transition-all duration-200">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 shrink-0" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0h6" />
+          </svg>
           Home
         </a>
-        <a href="/contact.html"
+        <a id="mobile-nav-programs" href="/#programs"
           class="flex items-center gap-4 px-6 py-5 rounded-xl text-[2.2rem] font-semibold text-primary hover:bg-btn-primary/10 hover:text-btn-primary transition-all duration-200">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 shrink-0" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          Programs
+        </a>
+        <a id="mobile-nav-contact" href="/#contact"
+          class="flex items-center gap-4 px-6 py-5 rounded-xl text-[2.2rem] font-semibold text-primary hover:bg-btn-primary/10 hover:text-btn-primary transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 shrink-0" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
           Contact Us
         </a>
       </nav>
@@ -263,7 +289,7 @@
         </div>
       </section>
       <!-- Education Section End -->
-      <section class="relative pt-10 pb-30">
+      <section id="programs" class="relative pt-10 pb-30">
         <div class="absolute lg:block hidden right-0 w-[10rem] bottom-[-18.75rem] z-10 rotate-180">
           <img src="/assets/images/vector-shape1.png" alt="education-bg"
             class="w-full anim-move h-full object-contain" />
@@ -564,9 +590,10 @@
                 Ready to Transform Your School's Impact?
               </div>
               <p class="text-primary-light font-light text-[2rem] lg:text-[1rem] lg:leading-7 leading-14 mt-5">
-                Let’s build the next generation of responsible, future-ready leaders together
+                Let’s build the next generation of responsible,<br class="lg:block hidden" /> future-ready leaders
+                together
               </p>
-              <div class="flex items-center lg:flex-row flex-col lg:gap-5 gap-10 mt-8">
+              <!-- <div class="flex items-center lg:flex-row flex-col lg:gap-5 gap-10 mt-8">
                 <div>
                   <button type="button"
                     class="btn-primary cursor-pointer rounded lg:px-6 px-8 lg:py-4 py-8 lg:text-sm text-2xl font-medium text-white transition-colors duration-500 hover:bg-[#0b3460]">
@@ -579,7 +606,7 @@
                     Download NEP Compliance Guide
                   </button>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -687,6 +714,134 @@
         </div>
       </section>
       <!-- FAQ Section End  -->
+
+      <!-- Let's Talk Section -->
+      <section id="contact" class="relative pt-16 pb-10 lg:pt-0 lg:pb-20">
+        <div class="absolute lg:block hidden w-[10rem] left-1 bottom-0">
+          <img src="/assets/images/vector-shape1.png" alt="education-bg" class="w-full h-full object-contain" />
+        </div>
+        <div class="absolute lg:block hidden w-[10rem] right-0 rotate-180  top-0">
+          <img src="/assets/images/vector-shape1.png" alt="education-bg" class="w-full h-full object-contain" />
+        </div>
+        <div class="mx-auto w-[90%] lg:max-w-[70%]">
+
+          <!-- Section Heading -->
+          <div class="flex flex-col gap-4 lg:gap-2 mb-16 lg:mb-20">
+            <div class="lg:text-[3rem] text-[4rem] text-center lg:leading-16 leading-20 font-semibold text-primary">
+              Let's Talk With Us
+            </div>
+            <p
+              class="text-primary-light lg:text-[1rem] text-[2rem] lg:leading-7 leading-12 w-full lg:w-[60%] mx-auto text-center">
+              We'd love to hear from you. Reach out and our team will get back to you promptly.
+            </p>
+          </div>
+
+          <!-- Contact Illustration -->
+          <div class="flex justify-center mb-12 lg:mb-16">
+            <img src="/assets/images/contact_us.png" alt="Contact Illustration"
+              class="w-[80%] lg:w-[40%] h-auto object-contain" />
+          </div>
+
+          <!-- Contact Info Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-8 w-full">
+
+            <!-- Location Block -->
+            <div class="flex flex-col items-center text-center gap-5">
+              <div
+                class="lg:w-[3.75rem] w-24 h-24 lg:h-[3.75rem] btn-primary text-white rounded-full flex items-center justify-center">
+                <div class="lg:w-10 lg:h-10 w-14 h-14">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.083 3.204-4.511 3.204-7.327a8.5 8.5 0 10-17 0c0 2.816 1.26 5.244 3.204 7.327a19.579 19.579 0 002.684 2.282 16.975 16.975 0 001.143.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              <div class="lg:text-[1.3rem] text-[2.3rem] font-semibold text-primary">Location</div>
+              <div class="flex flex-col items-center gap-1">
+                <p class="text-primary-light lg:text-[1rem] text-[1.8rem] lg:leading-7 leading-12">
+                  172, 1st Floor, Muda Market Complex,<br />
+                  Polo, Shillong G.P.O., Shillong,<br />
+                  East Khasi Hills, Meghalaya - 793001
+                </p>
+              </div>
+            </div>
+
+            <!-- Email Block -->
+            <div class="flex flex-col items-center text-center gap-5">
+              <div
+                class="lg:w-[3.75rem] w-24 h-24 lg:h-[3.75rem] btn-primary text-white rounded-full flex items-center justify-center">
+                <div class="lg:w-10 lg:h-10 w-14 h-14">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                    <path
+                      d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="lg:text-[1.3rem] text-[2.3rem] font-semibold text-primary">Email</div>
+              <div class="flex flex-col items-center gap-1">
+                <a href="mailto:contact@eduviansolutions.com"
+                  class="text-primary-light lg:text-[1rem] text-[1.8rem] lg:leading-7 leading-12 hover:text-btn-primary transition-colors duration-300 break-all">
+                  contact@eduviansolutions.com
+                </a>
+              </div>
+            </div>
+
+            <!-- Phone Block -->
+            <div class="flex flex-col items-center text-center gap-5">
+              <div
+                class="lg:w-[3.75rem] w-24 h-24 lg:h-[3.75rem] btn-primary text-white rounded-full flex items-center justify-center">
+                <div class="lg:w-10 lg:h-10 w-14 h-14">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              <div class="lg:text-[1.3rem] text-[2.3rem] font-semibold text-primary">Phone</div>
+              <div class="flex flex-col items-center gap-2">
+                <div class="text-primary-light lg:text-[1rem] text-[1.8rem] lg:leading-7 leading-12">
+                  <span class="font-semibold text-primary">North East:</span>
+                  <a href="tel:+916909610186" class="hover:text-btn-primary transition-colors duration-300"> +91 69096
+                    10186</a>
+                </div>
+                <div class="text-primary-light lg:text-[1rem] text-[1.8rem] lg:leading-7 leading-12">
+                  <span class="font-semibold text-primary">South:</span>
+                  <a href="tel:+917358744617" class="hover:text-btn-primary transition-colors duration-300"> +91 73587
+                    44617</a>
+                </div>
+                <div class="text-primary-light lg:text-[1rem] text-[1.8rem] lg:leading-7 leading-12">
+                  <span class="font-semibold text-primary">North:</span>
+                  <a href="tel:+919886043520" class="hover:text-btn-primary transition-colors duration-300"> +91 98860
+                    43520</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="pb-20 lg:pb-32 px-4 lg:px-0">
+        <div
+          class="mx-auto w-[90%] lg:max-w-[80%] h-[50vh] lg:h-[500px] rounded-[1.5rem] lg:rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white relative z-10 group">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.848991193339!2d91.87979377484984!3d25.576690316226298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37507e9258155555%3A0xf69c41d836afe581!2sMUDA%20Office!5e0!3m2!1sen!2sin!4v1776070276627!5m2!1sen!2sin"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="grayscale hover:grayscale-0 transition-all duration-700 ease-in-out">
+          </iframe>
+          <!-- Floating badge -->
+          <div
+            class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg border border-zinc-100 hidden lg:block pointer-events-none group-hover:opacity-0 transition-opacity duration-300">
+            <h4 class="text-primary font-bold text-sm">Eduvian Solutions Office</h4>
+            <p class="text-primary-light text-xs">Polo, Shillong, Meghalaya</p>
+          </div>
+        </div>
+      </section>
       <!-- footer start  -->
       <footer class="bg-gradient-to-r from-[#5f41dc] to-[#25a0ff] text-white pt-20 pb-5">
         <div class="mx-auto w-[90%] lg:max-w-[70%]">
@@ -706,11 +861,10 @@
             <div class="flex flex-col gap-5">
               <h3 class="lg:text-xl text-3xl font-semibold">Quick Links</h3>
               <ul class="flex flex-col gap-3 text-white/80 lg:text-sm text-2xl lg:leading-6 leading-10">
-                <li><a href="#" class="hover:text-white transition-colors">• Our Programs</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">• NEP 2020 Compliance</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">• Case Studies & Impact Reports</a></li>
-                <li><a href="#" class="hover:text-white transition-colors">• Schedule a Consultation</a></li>
-                <li><a href="/contact.html" class="hover:text-white transition-colors">• Contact Us</a></li>
+                <li><a id="footer-nav-programs" href="/#programs" class="hover:text-white transition-colors">• Our
+                    Programs</a></li>
+                <li><a id="footer-nav-contact" href="/#contact" class="hover:text-white transition-colors">• Contact
+                    Us</a></li>
               </ul>
             </div>
             <div class="flex flex-col gap-5">
@@ -732,10 +886,10 @@
                 Reach out to our partnership team to explore how Eduvian can work for your school.
               </p>
               <div>
-                <button
+                <a href="#"
                   class="bg-[#24516a] text-white lg:px-6 px-10 py-3 lg:py-3 py-5 rounded lg:text-sm text-2xl font-semibold hover:bg-[#0b3460] transition-colors border-none cursor-pointer">
                   Schedule Now
-                </button>
+                </a>
               </div>
             </div>
           </div>
